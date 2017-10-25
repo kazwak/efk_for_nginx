@@ -1,0 +1,73 @@
+{
+  "template": "proxylog-*",
+  "mappings": {
+    "fluent": {
+      "properties": {
+        "@timestamp" : {
+          "type" : "date",
+          "format" : "strict_date_optional_time||epoch_millis"
+        },
+        "agent" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "app_ip" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "app_reqtime" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "app_restime" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "cache_status" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "cache_time" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "code" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "forwarder" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "http_ver" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "method" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "path" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "referer" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "remote" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        },
+        "size" : {
+          "type" : "long",
+          "index" : "not_analyzed"
+        },
+        "user" : {
+          "type" : "string",
+          "index" : "not_analyzed"
+        }
+      }
+    }
+  }
+}

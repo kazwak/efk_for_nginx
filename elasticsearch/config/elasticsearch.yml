@@ -1,0 +1,9 @@
+http.host: 0.0.0.0
+
+# Uncomment the following lines for a production cluster deployment
+#transport.host: 0.0.0.0
+#discovery.zen.minimum_master_nodes: 1
+http.max_content_length: 1g
+threadpool.index.queue_size: -1 # デフォルト 200
+threadpool.bulk.queue_size: -1 # デフォルト 50
+path.conf: /usr/share/elasticsearch/config
